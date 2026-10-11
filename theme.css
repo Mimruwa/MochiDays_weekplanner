@@ -1,0 +1,77 @@
+/* Mochi Days Cute Edition v3 — visual overrides; interactive controls remain real HTML. */
+:root{--ink:#442635;--muted:#896475;--cream:#fffdf7;--pink:#ffe4ed;--pink2:#ffbdd5;--blue:#e4f4ff;--mint:#e4f7e7;--yellow:#fff1c9;--lav:#eee6ff;--edge:#efccd8;--shadow:0 18px 55px #bb8b9b2d}
+body{font-family:'Nunito','Comic Neue','Comic Sans MS','Trebuchet MS',Verdana,sans-serif;font-weight:700;font-size:15px;line-height:1.52;background:radial-gradient(circle at 12% 12%,#ffe3ed,transparent 31%),radial-gradient(circle at 94% 80%,#e0f6e9,transparent 36%),radial-gradient(circle at 60% 12%,#f7e6ff,transparent 26%),#fff8f4}
+button,input,textarea,select{font-family:inherit}
+button{font-weight:900}
+.app{max-width:1370px}
+.topbar{padding:14px 9px 20px;gap:18px}
+.brand{gap:13px;min-width:230px}
+.brand-mochi{width:69px;height:60px;object-fit:contain;filter:drop-shadow(0 3px 3px #f5bdd0)}
+.brand b{font-family:'Fredoka','Comic Neue','Comic Sans MS','Trebuchet MS',sans-serif;font-weight:700;font-size:clamp(26px,3vw,34px);letter-spacing:.1px;color:#472537}
+.brand small{font-size:13px;font-weight:800;color:#b07491;letter-spacing:.1px}
+.tools{gap:9px}
+.pill{font-family:'Fredoka','Comic Neue','Comic Sans MS','Trebuchet MS',sans-serif;border:2px solid #e7adca;background:#fffbfb;box-shadow:0 4px 0 #f9d7e4;border-radius:999px;padding:11px 16px;font-size:15px;letter-spacing:.15px;transition:transform .12s,box-shadow .12s}
+.pill:hover{transform:translateY(-2px);box-shadow:0 6px 0 #f7d1e0}
+.pill:active{transform:translateY(2px);box-shadow:0 1px 0 #f7d1e0}
+.pill.active{background:#ffd0e1;border-color:#d997b2}
+.pill.primary{background:#ffbdd7;border-color:#dd8faf}
+.workspace{border:3px solid #edc2ce;border-radius:30px;padding:30px 81px 36px 52px;background:linear-gradient(180deg,#fffdf9,#fffaf6);box-shadow:0 16px 0 #f6dce8,0 26px 64px #b5849e30}
+.workspace:before{left:11px;top:18px;bottom:18px;width:22px;border-radius:12px;background:repeating-linear-gradient(to bottom,transparent 0,transparent 15px,#c19361 15px,#c19361 21px,#6d4a3a 22px,#c19361 23px,transparent 25px,transparent 52px);opacity:.75}
+.tabs{right:-1px;top:13px;gap:4px}
+.tab{border:2px solid #e4b4c4;border-right:0;border-radius:13px 0 0 13px;width:64px;height:41px;font-family:'Fredoka','Comic Neue','Comic Sans MS','Trebuchet MS',sans-serif;font-size:12px;font-weight:700;box-shadow:0 2px 0 #edcfdd}
+.tab:nth-child(3n+1){background:#dff2ff}.tab:nth-child(3n+2){background:#fff0c9}.tab:nth-child(3n){background:#f1ddff}
+.tab.active{width:69px;box-shadow:-4px 0 #ee95b5}
+.mainhead{position:relative;background:linear-gradient(94deg,#ffe6ef,#ffeff2 62%,#fff4d6);border:2px solid #f3c0d4;border-radius:23px;padding:18px 175px 17px 25px;margin-bottom:20px;min-height:120px;display:flex;align-items:center;flex-wrap:wrap;overflow:hidden}
+.mainhead:after{content:'';width:166px;height:118px;background:url('assets/mochi-peek.svg') center/contain no-repeat;position:absolute;right:3px;bottom:-4px;pointer-events:none;opacity:.98}
+.mainhead h1{font-family:'Fredoka','Comic Neue','Comic Sans MS','Trebuchet MS',sans-serif;font-size:clamp(33px,4.5vw,53px);font-weight:700;letter-spacing:.2px;color:#503044;text-shadow:1px 3px 0 #fff5f8}
+.mainhead h1 span{font-size:24px!important}
+.mainhead p{color:#9d5f7d;font-size:14px;font-weight:900;margin-top:3px}
+.datebar{position:relative;z-index:1}.datebar input{border:2px solid #edb7cf;background:#fffefc;border-radius:14px;font-family:'Nunito',sans-serif;font-size:14px;font-weight:900;max-width:158px;padding:10px}
+.panel{position:relative;border:2px solid #e8c6d3;border-radius:23px;padding:20px;background:#fffdfa;box-shadow:0 4px 0 #f8e4e9;overflow:hidden}
+.panel.blue{border-color:#b8dcf1;background:linear-gradient(160deg,#dff3ff,#ecfaff)}
+.panel.pink{border-color:#f1bbd2;background:linear-gradient(160deg,#ffe3ec,#fff2f6)}
+.panel.yellow{border-color:#ebd198;background:linear-gradient(160deg,#fff1ca,#fff9e9)}
+.panel.mint{border-color:#b9e4c0;background:linear-gradient(160deg,#e3f6e3,#f2fdf2)}
+.panel.lav{border-color:#d9c5ee;background:linear-gradient(160deg,#f0e6ff,#faf4ff)}
+.panel h2{font-family:'Fredoka','Comic Neue','Comic Sans MS','Trebuchet MS',sans-serif;font-size:23px;letter-spacing:.1px;font-weight:700;color:#4b2b40}
+.panel p{font-weight:750;line-height:1.65}
+.task{margin:10px 0}.task input[type=checkbox]{width:21px;height:21px;accent-color:#ee90b7}
+.task input[type=text]{font-size:15px;font-weight:750;border-bottom:2px dashed #d6c0b9}
+.task input[type=text]::placeholder,.lined::placeholder{color:#b59fa7;font-weight:700}
+.lined{border:2px solid #edcfdb;border-radius:15px;padding:12px;font-size:15px;font-weight:750;background:repeating-linear-gradient(to bottom,transparent 0,transparent 29px,#f1dee4 30px,transparent 31px),#fffdfc;line-height:31px}
+.schedule{font-size:14px;grid-template-columns:68px 1fr;gap:6px}.schedule input{padding:7px;border-bottom:2px dashed #dbbfc7}.schedule label{font-weight:900}
+.mini{border:2px solid #e6bbca;background:#fffafd;font-size:20px;padding:10px;border-radius:14px;transition:transform .12s}.mini.chosen{background:#ffc1db;border-color:#d98eae;box-shadow:0 3px 0 #e5a3bd}.mini:hover{transform:translateY(-2px)}
+.drawbox{border:2px dashed #e8a0c5;background:linear-gradient(135deg,#fff5fb,#fffdf6);border-radius:18px;padding:13px}.drawarea{height:250px;border:2px solid #f3cedd;border-radius:13px;background:#fffdfc}
+.bar h2{font-family:'Fredoka','Comic Neue','Comic Sans MS',sans-serif;font-size:23px}
+.status,.hint{font-size:13px;font-weight:800;color:#8c6c81}
+.weekgrid{gap:13px}.daycard{min-height:225px}.daycard h2{font-size:20px}.daycard .open{margin-top:auto}
+.dow{border-radius:10px;padding:12px 3px;font-size:14px;font-family:'Fredoka','Comic Neue','Comic Sans MS',sans-serif;background:#ffecbf}
+.datecell{border:2px solid #eddae0;border-radius:13px;min-height:91px;background:#fffdf9}.datecell .num{font-family:'Fredoka','Comic Neue','Comic Sans MS',sans-serif;font-size:16px}.datecell:hover{border-color:#e9a0bb}
+.habit-day{background:#ffedf5;font-size:13px}
+.habit-row input[type=checkbox]{width:19px;height:19px}
+.footer{font-family:'Fredoka','Comic Neue','Comic Sans MS','Trebuchet MS',sans-serif;font-size:14px;color:#996c83;padding:25px 5px}
+/* Charming actual working Backup & Help layout */
+.backup-hero{position:relative;border-radius:24px;border:2px solid #f5c7db;background:linear-gradient(100deg,#ffdee9,#fff0f3 60%,#fff5dc);padding:20px 240px 20px 27px;min-height:155px;margin-bottom:21px;overflow:hidden}
+.backup-hero h1{font-family:'Fredoka','Comic Neue','Comic Sans MS',sans-serif;font-weight:700;color:#563048;font-size:clamp(33px,4.4vw,52px);margin:4px 0 6px;line-height:1.14}
+.backup-hero p{font-family:'Nunito',sans-serif;font-size:17px;font-weight:900;color:#98667d;margin:0}
+.backup-hero img{position:absolute;right:23px;bottom:-24px;height:185px;max-width:230px;object-fit:contain;pointer-events:none}
+.backup-panel{min-height:266px;padding:24px 25px 25px;isolation:isolate}
+.backup-panel h2{font-size:28px}
+.backup-panel p{max-width:440px;margin:10px 0 17px;font-size:16px;position:relative;z-index:1}
+.backup-panel .backup-illustration{position:absolute;right:-12px;bottom:-16px;width:160px;height:138px;opacity:.85;object-fit:contain;pointer-events:none;z-index:-1}
+.backup-panel .pill,.backup-panel .field{position:relative;z-index:1}
+.backup-panel .field{max-width:93%;font-size:14px}
+.backup-tip{grid-column:1/-1;border-radius:20px;border:2px solid #efd6a7;background:linear-gradient(90deg,#fff1c9,#fff8dd);padding:19px 24px 20px;position:relative;min-height:130px;overflow:hidden}
+.backup-tip h2{font-size:25px;margin-bottom:6px}.backup-tip p{max-width:920px;margin:5px 0;font-size:15px;font-weight:800;line-height:1.5}
+.backup-tip img{position:absolute;right:4px;bottom:-39px;height:155px;width:165px;object-fit:contain;pointer-events:none}
+.backup-tip .tipcopy{padding-right:158px}
+.settings-detail{font-size:13px;color:#8e6879;font-weight:800;margin:0 0 7px}
+@media(max-width:850px){.workspace{padding:20px 65px 26px 37px}.mainhead{padding-right:125px}.mainhead:after{width:115px}.topbar{padding:10px}.brand-mochi{width:53px}.tab{height:35px;width:50px;font-size:11px}.backup-hero{padding-right:160px}.backup-hero img{height:154px;right:-6px}.backup-panel .backup-illustration{width:120px;opacity:.55}}
+@media(max-width:580px){.workspace{padding:17px 47px 21px 26px}.tools{justify-content:center}.topbar{justify-content:center}.brand{justify-content:center}.mainhead{padding:16px 13px;min-height:85px}.mainhead:after{opacity:.24;width:110px}.mainhead h1{font-size:32px}.datebar{margin-top:8px}.datecell{min-height:45px;padding:3px}.tab{height:28px;width:35px;font-size:10px}.mainhead p{font-size:12px}.panel{padding:15px}.panel h2{font-size:20px}.backup-hero{padding:15px 15px 90px;min-height:160px}.backup-hero h1{font-size:34px}.backup-hero img{height:112px;right:0;bottom:-22px}.backup-panel{min-height:230px}.backup-panel .backup-illustration{opacity:.45}.backup-tip .tipcopy{padding-right:0;padding-bottom:115px}.backup-tip img{height:120px;right:0;bottom:-27px}}
+
+/* Visible mascot by every planner section, and extra-round titles */
+.mainhead:after{display:none}
+.head-mochi{position:absolute;right:2px;bottom:-14px;width:170px;height:145px;object-fit:contain;pointer-events:none;opacity:.98;z-index:0}
+.backup-hero h1,.mainhead h1,.panel h2,.brand b{font-weight:900;-webkit-text-stroke:.2px currentColor}
+@media(max-width:850px){.head-mochi{width:120px;height:110px;right:0}}
+@media(max-width:580px){.head-mochi{width:110px;height:100px;opacity:.25}}

@@ -1,0 +1,25 @@
+MOCHI DAYS — CUTE V3 OWNER BETA (NOT FOR PUBLIC SALE YET)
+
+You do not need to make any new Canva designs. The original interactive UI has been restyled.
+
+YOUR NEXT SMALL STEP — SET UP DATABASE
+1. Sign in at https://supabase.com/dashboard
+2. Open your Mochi Days project.
+3. Click SQL Editor (left sidebar).
+4. Click New query.
+5. Open the supabase_schema.sql file in this folder using Notepad.
+6. Copy all its contents, paste into SQL Editor, then select Run.
+7. After you see Success, tell ChatGPT 'SQL done' (a screenshot is fine).
+
+DO NOT SEND: your Supabase password, service_role/secret API keys, account tokens.
+The URL and publishable/anon key are intended to be public but should only be shared once owner is ready.
+
+AFTER SQL SUCCESS
+We will find the Project URL and publishable API key and enter them into cloud-config.js (never any secret key). Then host the app over HTTPS, configure email authentication redirect URLs, and test separate accounts across TWO devices. The database RLS rules are only a starting point and still need testing before real buyers.
+
+GOOD TO KNOW
+The app has REAL checkboxes, input fields, local save, date navigation, and drawing.
+Cloud login/sync is NOT ACTIVE until you configure Supabase and host on HTTPS.
+Browser data may be lost on clearing cache. Use My Backups > Download My Backup.
+New assets are original SVG mascot illustrations. Large display fonts use an internet-hosted Google Fonts stylesheet; fallback fonts are shown when offline.
+This ZIP includes owner setup files. DO NOT list this ZIP on Etsy.

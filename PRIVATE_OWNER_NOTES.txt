@@ -1,0 +1,10 @@
+MOCHI DAYS — OWNER NOTES (NOT FOR CUSTOMERS)
+
+This is a local, testable beta application, NOT a public Etsy-ready product.
+- Data is saved in this browser by default. Export backups before deleting browser data.
+- Cloud sync requires correct Supabase configuration, per-user data isolation, account verification, RLS testing, HTTPS hosting, and sync/conflict testing.
+- Do not claim automatic multi-device sync until tested on real devices.
+- The Etsy digital-product rules, intellectual property / fonts / illustrations licensing, privacy policy and support process must be reviewed before publishing.
+- Never share Supabase service_role keys, database passwords, personal Canva logins, or private tokens in ChatGPT shared with someone else.
+- Disconnect your Canva account on shared ChatGPT: Settings > Plugins > Canva > ... > Manage > ... > Disconnect.
+- Shared design links and saved conversations remain separate from disconnecting: revoke Anyone with link access on designs.
